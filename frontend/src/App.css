@@ -1,0 +1,291 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+:root {
+  --button-color: #1e90ff;
+  --button-second-color: #70a1ff;
+  --success-border: #2ed573;
+  --pending-border: #ffa502;
+  --danger-border: #ff4757;
+  --text-color: #2f3542;
+  --text-size: 0.785rem;
+  --title-text-size: 1rem;
+  --header-text-size: 2rem;
+  --header-font: "Smooch", cursive;
+  --font-family: "Open Sans", sans-serif;
+  --spacing: 12px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Authentication style */
+.auth_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  max-width: 450px;
+  width: 100%;
+  padding: var(--spacing);
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 7px;
+}
+.auth_header {
+  text-align: center;
+  color: var(--text-color);
+  font-size: var(--header-text-size);
+  margin-bottom: var(--spacing);
+  font-family: var(--header-font);
+}
+.input_filed {
+  font-size: var(--text-size) !important;
+  margin: 7px 0;
+  font-family: var(--font-family) !important;
+  font-weight: 600 !important;
+}
+btn_container {
+  width: 100%;
+  margin: 5px 0;
+}
+.auth_btn {
+  width: 100%;
+  height: 38px;
+  background-color: var(--button-color) !important;
+  color: white;
+}
+.disable {
+  background-color: var(--button-second-color) !important;
+  font-family: var(--font-family) !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-size: var(--text-size);
+}
+.footer_text {
+  text-align: center;
+  font-size: var(--text-size);
+  margin-top: 7px;
+}
+.link {
+  font-weight: 700;
+  color: var(--button-color);
+}
+
+/* APP Style */
+.container {
+  max-width: 600px;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  border: 1px solid #dfe4ea;
+  margin: 0 auto;
+}
+.app_header {
+  border: 1px solid #dfe4ea;
+  width: 100%;
+  height: 7vh;
+}
+.primary_header {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.secondary_header {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+.header_btn {
+  background-color: transparent !important;
+  margin-right: var(--spacing);
+}
+.header_text {
+  font-weight: 700;
+  font-size: 1.01rem;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.menu_btn {
+  background-color: transparent !important;
+}
+.avatar {
+  width: 30px !important;
+  height: 30px !important;
+}
+.navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_item {
+  font-size: var(--text-size);
+  font-weight: 500;
+  width: 80px;
+  text-align: center;
+  padding: 3px 0;
+  border-radius: 12px;
+  transition: 0.2s linear;
+}
+
+.nav_item:hover {
+  color: var(--button-color);
+}
+.icon {
+  margin-right: 7px;
+}
+.menu_item {
+  font-weight: 500;
+  font-size: var(--text-size);
+}
+.input_textarea {
+  resize: none;
+  min-height: 150px !important;
+}
+.post_btn {
+  width: 100px;
+  background-color: var(--button-color) !important;
+  color: white;
+  font-size: var(--text-size) !important;
+  letter-spacing: 0.3px;
+}
+
+/* PROFILE STYLE */
+.profile_container {
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--spacing) 0;
+}
+.profile_avatar_container {
+  width: 100%;
+  text-align: center;
+}
+.profile_avatar {
+  width: 160px !important;
+  height: 160px !important;
+}
+.profile_info {
+  text-align: center;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.username {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgb(154, 154, 154);
+}
+.task_count_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.task_card {
+  border-radius: 5px;
+  min-width: 160px;
+  min-height: 220px;
+  margin: var(--spacing);
+  text-align: center;
+  color: white;
+  box-shadow: 10px 10px 5px -3px rgba(148, 148, 148, 1);
+}
+.complete {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+.task {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.pendding {
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+.card_header {
+  margin: var(--spacing) 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.card_num {
+  margin-top: 12px;
+  font-size: 5rem;
+}
+
+/* Settings Style */
+.settings_container {
+  width: 100%;
+  height: auto;
+}
+.settings_btn {
+  width: 100%;
+  margin: 7px 0;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-image: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 100%
+  ) !important;
+  color: white;
+  height: 50px !important;
+}
+.settings_box {
+  max-width: 500px;
+  margin: 7px auto;
+}
+.btn_container {
+  text-align: right;
+}
+.btn_settings {
+  margin: 0 7px;
+  width: 100px;
+  height: 38px;
+  background-color: var(--button-color) !important;
+  color: white;
+}
+.cancel {
+  background-color: crimson !important;
+}
+
+/* Profile Settings style */
+.avatar_container {
+  text-align: center;
+}
+.settings_profile_avatar {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+}
+.profile_settings_image_icon {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 15px !important;
+  transform: translateX(-50%);
+  background-color: #0808086f !important;
+  color: white;
+}
+.modal_avatar {
+  text-align: center;
+  margin: 12px 0;
+}
+.avatar_prev {
+  width: 160px !important;
+  height: 160px !important;
+}
